@@ -15,9 +15,9 @@
 </head>
 <body>
   <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+    <div class="nav-wrapper container"><a href="#" class=""><i class="material-icons">home</i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Practicas</a></li>
+        <li><a class='dropdown-trigger' href='#' data-target='dropdown1' id="dropdown-practicas">Practicas</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
@@ -28,7 +28,7 @@
     </div>
   </nav>
 
-  <ul id="slide-out" class="sidenav">
+  <ul class="sidenav" style="display:none" id="nav-practias">
     <li><div class="user-view">
       <div class="background">
         <img src="background1.jpg">
@@ -279,6 +279,10 @@
 
   $('#enviar-form').click(function(){
 
+  })
+
+  $('#dropdown-practicas').hover(function(){
+     $('#nav-practias').css("display","block")
   })
 
   </script>
