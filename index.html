@@ -28,8 +28,8 @@
                 <label for="autocomplete-input">Email</label>
               </div>
               <div class="input-field col s12">
-                <i class="material-icons prefix">verified_user</i>
-                <input type="text" id="autocomplete-input" class="autocomplete">
+                <i class="material-icons prefix">lock_outline</i>
+                <input type="password" id="autocomplete-input" class="autocomplete">
                 <label for="autocomplete-input">Contraseña</label>
               </div>
             </div>
@@ -38,18 +38,19 @@
       </form>
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Registrate</a>
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Aceptar</a>
+      <a class="waves-effect waves-light btn">INGRESAR</a>
     </div>
   </div>
 
   <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><i class="material-icons">home</i></a>
       <ul class="right hide-on-med-and-down">
+        <li><a href="#modal1" class="modal-trigger">Ingresar</a></li>
         <li><a href="#modal1" class="modal-trigger">Registrate</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
+        <li><a href="#modal1" class="modal-trigger">Ingresar</a></li>
         <li><a class="modal-trigger" href="#modal1">Registrate</a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -96,12 +97,13 @@
 
 <div class="section no-pad-bot" id="index-banner">
   <div class="container">
-    <h1 class="header left orange-text">Depilación Laser Definitiva</h1>
-    <div class="row left">
-      <h5 class="header col s12 light">Certificado por el Consejo General de Ciencias Estéticas</h5>
-    </div>
-    <!-- <div class="row center">
+    <img class="materialboxed" style="width:100%" src="img/pancarta.jpeg">
+    <!-- <h1 class="header left orange-text">Depilación Laser Definitiva</h1> -->
+    <!-- <div class="row left">
+    <h5 class="header col s12 light">Certificado por el Consejo General de Ciencias Estéticas</h5>
   </div> -->
+  <!-- <div class="row center">
+</div> -->
 </div>
 </div>
 <div class="container">
@@ -264,13 +266,10 @@
   <script type="text/javascript">
   $(document).ready(function(){
     $('.carousel').carousel();
-    
-    document.addEventListener('DOMContentLoaded', function() {
-      var elems = document.querySelectorAll('.modal');
-      var instances = M.Modal.init(elems, options);
-    });
 
-    // Or with jQuery
+    $(document).ready(function(){
+      $('.materialboxed').materialbox();
+    });
 
     $(document).ready(function(){
       $('.modal').modal();
